@@ -1,0 +1,80 @@
+<h1>[flexitup]<small> a css flex cheat-app</small></h1>
+
+<form>
+  
+  <div class="select-wpr">
+    <label for="flex-wrap">flex-wrap</label><br>
+    <select id="flex-wrap">    
+      <option selected value="nowrap">nowrap (default)</option>
+      <option value="wrap">wrap</option>
+      <option value="wrap-reverse">wrap-reverse</option>    
+    </select>
+  </div>
+
+  <div class="select-wpr">
+    <label for="flex-direction">flex-direction</label><br>
+    <select id="flex-direction">
+      <option selected value="row">row (default)</option>
+      <option value="row-reverse">row-reverse</option>
+      <option value="column">column</option>        
+      <option value="column-reverse">column-reverse</option>    
+    </select>	
+  </div>
+
+  <div class="select-wpr">
+    <label for="justify-content">justify-content</label><br>
+    <select id="justify-content">
+      <option selected value="flex-start">flex-start (default)</option>
+      <option value="flex-end">flex-end</option>
+      <option value="center">center</option>        
+      <option value="space-around">space-around</option>    
+      <option value="space-between">space-between</option>    
+    </select>
+  </div>
+
+  <div class="select-wpr">
+    <label for="align-items">align-items</label><br>
+    <select id="align-items">
+      <option selected value="stretch">stretch (default)</option>
+      <option value="center">center</option>
+      <option value="flex-start">flex-start</option>        
+      <option value="flex-end">flex-end</option>    
+      <option value="baseline">baseline</option>    
+    </select>  
+  </div>
+    
+</form>
+
+<h2>output</h2>
+
+<ul class="flex l-none m-half">
+  <li>1<br>a<br>x<br>y</li>
+  <li>2<br>b<br>x</li>
+  <li>3<br>c</li>
+  <li>4</li>
+  <li>5</li>
+  <li>k</li>
+</ul>
+
+<h2>css</h2>
+
+<div class="code">
+  <code>
+  .flex { <br>
+     <span class="code-wrap">flex-wrap: nowrap;</span>
+     <span class="code-dire">flex-direction: row;</span>
+     <span class="code-just">justify-content: flex-start;</span>
+     <span class="code-line">align-items: stretch;</span>
+  }
+  </code>
+</div>
+
+<h2>html</h2>
+
+<div class="code">
+<pre>&lt;ul class="flex" style="list-style-type: none"&gt;
+  &lt;li&gt;&lt;/li&gt;
+    ...
+  &lt;li&gt;&lt;/li&gt;    
+&lt;/ul&gt;</pre>
+</div>    

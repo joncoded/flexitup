@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700');
+html, body { 
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+/* the flex factory */
+
+.flex { display: flex; /* optional ---> */ margin: 0; padding: 0; }
+
+.flex-wrap-nowrap { flex-wrap: no-wrap; }
+.flex-wrap-wrap { flex-wrap: wrap; }
+.flex-wrap-wrap-reverse { flex-wrap: wrap-reverse; }
+
+.flex-direction-row { flex-direction: row; }
+.flex-direction-row-reverse { flex-direction: row-reverse; }
+.flex-direction-column { flex-direction: column; }
+.flex-direction-column-reverse { flex-direction: column-reverse; }
+
+.justify-content-flex-start { justify-content: flex-start; }
+.justify-content-flex-end { justify-content: flex-end; }
+.justify-content-center { justify-content: center; }
+.justify-content-space-around { justify-content: space-around; }
+.justify-content-space-between { justify-content: space-between; }
+
+.align-items-center { align-items: center; }
+.align-items-stretch { align-items: stretch; }
+.align-items-flex-start { align-items: flex-start; }
+.align-items-flex-end { align-items: flex-end; }
+.align-items-baseline { align-items: baseline; }
+
+/* content inside each list item block (the digit) */
+
+ul li {
+  margin: 0; padding: 0; min-width: 100px;
+  font-size: 2rem; font-weight: 600; text-align: center;
+}
+
+/* arbitrary coloring to differentiate blocks */
+
+ul li:first-child { background: #000; color: #fff;  }
+ul li:nth-child(2) { background: #c00; }
+ul li:nth-child(3) { background: #ec0; }
+ul li:nth-child(4) { background: #e60; }
+ul li:nth-child(5) { background: #090; }
+ul li:last-child { background: #06c; color: #fff;  }
+
+/* helper classes */
+
+form { border: 1px solid #ccc; display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: stretch;}
+form .select-wpr { margin: 15px }
+
+.l-none { list-style-type: none }
+.m-half { margin: 15px }
+.code { background: #ccc; color: #333; width: calc(100%-10px); padding: 10px; line-height: 2rem; }
+[class^="code-"] { display: block; padding-left: 15px; }
+
+body {
+  padding: 0 30px 30px 30px; 
+}
+
+h1 { 
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h1 small {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+select {
+  margin: 15px;
+  padding: 7.5px;
+}
